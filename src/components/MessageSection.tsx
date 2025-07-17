@@ -14,12 +14,18 @@ const MessageSection = () => {
         <Card className="p-8 md:p-12 shadow-soft bg-card/80 backdrop-blur-sm border-border/50 animate-scale-in">
           <div className="prose prose-lg max-w-none text-foreground">
             <p className="text-xl leading-relaxed mb-6 text-center font-medium text-primary">
-              My Dearest,
+              Hiee Ranisaheb,
             </p>
-            
+
             <p className="mb-6 leading-relaxed text-lg">
               I've been thinking about what happened, and I can't stop replaying it in my mind. 
               I know I hurt you, and that's the last thing I ever wanted to do. You deserve so much better than my thoughtless words and actions.
+            </p>
+
+            <p className="mb-6 leading-relaxed text-lg">
+              One thing I regret deeply is saying <strong>"you can leave me."</strong> I didn’t mean that — not even for a moment. 
+              It came from a place of fear and frustration, not truth. The thought of losing you breaks me, and I’m so sorry for making you feel like walking away was an option. 
+              You mean too much to me.
             </p>
 
             <p className="mb-6 leading-relaxed text-lg">
@@ -40,7 +46,7 @@ const MessageSection = () => {
 
             <p className="text-center mt-8 text-lg italic text-muted-foreground">
               Forever yours,<br />
-              <span className="text-primary font-medium">Your Loving Partner</span>
+              <span className="text-primary font-medium">Megs</span>
             </p>
           </div>
         </Card>

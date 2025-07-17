@@ -8,7 +8,7 @@ const Index = () => {
     <div className="min-h-screen">
       <HeroSection />
       <MessageSection />
-      <MemoryGallery />
+      {/* <MemoryGallery /> */}
       <ForgivenessSection />
     </div>
   );

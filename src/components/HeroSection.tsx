@@ -29,13 +29,12 @@ const HeroSection = () => {
         </div>
         
         <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight">
-          I'm Sorry,<br />
-          <span className="text-primary">My Love</span>
+          Sorry naaa,<br />
+          <span className="text-primary">Goduuuu</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">
-          I know I messed up, and words can't express how sorry I am. 
-          You mean everything to me, and I want to make this right.
+I know I messed up, and I can’t tell you how sorry I am. You mean the world to me, and I hate that I hurt you. I just want the chance to make things right, because you truly matter to me.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
