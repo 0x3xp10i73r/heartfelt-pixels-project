@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -70,25 +71,55 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'float-delayed': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-8px)' }
+				},
+				'fade-in-up': {
+					'0%': { opacity: '0', transform: 'translateY(30px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'scale-in': {
+					'0%': { opacity: '0', transform: 'scale(0.9)' },
+					'100%': { opacity: '1', transform: 'scale(1)' }
+				},
+				'glow-pulse': {
+					'0%, 100%': { filter: 'drop-shadow(0 0 20px hsl(345, 65%, 75%, 0.4))' },
+					'50%': { filter: 'drop-shadow(0 0 30px hsl(345, 65%, 75%, 0.6))' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'float-delayed': 'float-delayed 3s ease-in-out infinite 1.5s',
+				'fade-in-up': 'fade-in-up 0.6s ease-out',
+				'scale-in': 'scale-in 0.4s ease-out',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-romantic': 'var(--gradient-romantic)',
+				'gradient-soft': 'var(--gradient-soft)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'romantic': 'var(--shadow-romantic)',
+				'soft': 'var(--shadow-soft)',
+				'glow': 'var(--shadow-glow)'
+			},
+			fontFamily: {
+				'serif': ['Playfair Display', 'serif'],
 			}
 		}
 	},
